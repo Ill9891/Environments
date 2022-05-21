@@ -431,3 +431,5 @@ C:\Users\illia.shapovalov\source\repos\Environments\Environments\bin\Debug\net5.
 C:\Users\illia.shapovalov\source\repos\Environments\Environments\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\illia.shapovalov\source\repos\Environments\Environments\obj\Debug\net5.0\Razor\Views\EnvironmentStatus\Index.cshtml.g.cs
 C:\Users\illia.shapovalov\source\repos\Environments\Environments\obj\Debug\net5.0\Razor\Views\EnvironmentStatus\Create.cshtml.g.cs
+C:\Users\illia.shapovalov\source\repos\Environments\Environments\obj\Debug\net5.0\Razor\Views\EnvironmentStatus\Edit.cshtml.g.cs
+C:\Users\illia.shapovalov\source\repos\Environments\Environments\obj\Debug\net5.0\Razor\Views\EnvironmentStatus\Delete.cshtml.g.cs

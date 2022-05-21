@@ -1,10 +1,10 @@
 ﻿@model EnvironmentStatus
 
-<form method="post" asp-action="Create">
+<form method="post" asp-action="DeletePost">
+    <input asp-for="Id" hidden/>
     <div class="border p-3">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="form-group row">
-            <h2 class="text-info pl-3">Add Environment</h2>
+            <h2 class="text-info pl-3">Delete Environment</h2>
         </div>
         <div class="row">
             <div class="col-8">
@@ -13,8 +13,7 @@
                         <label asp-for="EnvironmentName"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="EnvironmentName" class="form-control"/>
-                        <span asp-validation-for="EnvironmentName" class="text-danger"></span>
+                        <input asp-for="EnvironmentName" disabled class="form-control"/>
                     </div>
 
                 </div>
@@ -23,8 +22,7 @@
                         <label asp-for="Credentials"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="Credentials" class="form-control" />
-                        <span asp-validation-for="Credentials" class="text-danger"></span>
+                        <input asp-for="Credentials" disabled class="form-control"/>
                     </div>
 
                 </div>
@@ -33,7 +31,7 @@
                         <label asp-for="EnvIsApplicableFor"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="EnvIsApplicableFor" class="form-control"/>
+                        <input asp-for="EnvIsApplicableFor" disabled class="form-control"/>
                     </div>
 
                 </div>
@@ -42,14 +40,14 @@
                         <label asp-for="Notes"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="Notes" class="form-control"/>
+                        <input asp-for="Notes" disabled class="form-control"/>
                     </div>
 
                 </div>
                 <div class="form-group row">
                     <div class="col-8 offset-4 row">
                         <div class="col">
-                            <input type="submit" class="btn btn-info w-100" value="Create"/>
+                            <input type="submit" class="btn btn-danger w-100" value="Delete"/>
                         </div>
                         <div class="col">
                             <a asp-action="Index" class="btn btn-success w-100">Back</a>
@@ -67,6 +65,6 @@
 @section Scripts
 {
     @{
-        <partial name="_ValidationScriptsPartial"/>
+        <partial name="_ValidationScriptsPartial" />
     }
 }
