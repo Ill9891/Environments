@@ -102,8 +102,6 @@ namespace Environments.Controllers
             _db.EnvironmentStatus.Remove(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");
-
-            return View(obj);
         }
     }
 }
