@@ -16,9 +16,12 @@ namespace Environments.Models
         public string  EnvironmentName { get; set; }
         [Required]
         public string Credentials { get; set; }
+        [DisplayName("Name")]
         public string EmployeeName { get; set; }
         public string Stack { get; set; }
+        [DisplayName("Is Busy?")]
         public string IsBusy { get; set; }
+        [DisplayName("Environment Is Applicable For")]
         public string EnvIsApplicableFor { get; set; }
         public string Notes { get; set; }
     }

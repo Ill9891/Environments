@@ -30,6 +30,36 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-4">
+                        <label asp-for="EmployeeName"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="EmployeeName" class="form-control"/>
+                        <span asp-validation-for="EmployeeName" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Stack"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Stack" class="form-control"/>
+                        <span asp-validation-for="Stack" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="IsBusy"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="IsBusy" class="form-control"/>
+                        <span asp-validation-for="IsBusy" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
                         <label asp-for="EnvIsApplicableFor"></label>
                     </div>
                     <div class="col-8">
